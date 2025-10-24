@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Descarga Comet - Obtén 1 mes gratis PRO con Perplexity</title>
-  <meta name="description" content="Descubre el navegador de inteligencia artificial Comet de Perplexity. Descarga, participa en el programa de referidos y recibe un mes PRO gratis. ¡Solo por tiempo limitado!">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Descarga Comet - Perplexity | 1 mes PRO gratis</title>
+  <meta name="description" content="Landing oficial para descarga de Comet IA (Perplexity) y programa de referidos. Descárgalo y recibe 1 mes PRO gratis + recompensas por invitar.">
+  <!-- Inter font by Google, usada oficialmente por Perplexity -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --main-bg: #191c21;
       --accent: #8256ff;
-      --primary: #fff;
+      --primary: #ffffff;
       --secondary: #8088a2;
-      --button-bg: #8256ff;
-      --button-hover: #6741c0;
       --card-bg: #23263a;
+      --button-bg: #8256ff;
+      --button-hover: #3623ad;
+      --circle-gradient: radial-gradient(circle at 30% 30%, #8256ff22 0%, #23263a 100%);
     }
     body {
       font-family: 'Inter', sans-serif;
@@ -22,42 +24,53 @@
       background: var(--main-bg);
       color: var(--primary);
       min-height: 100vh;
+      background-image: var(--circle-gradient);
       overflow-x: hidden;
     }
     header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 2rem 4vw;
+      justify-content: flex-start;
+      gap: 1.2rem;
+      padding: 2rem 6vw 1rem 6vw;
       background: var(--card-bg);
+      box-shadow: 0 4px 24px #8256ff08;
     }
-    header img.logo {
-      height: 48px;
-      margin-right: 1rem;
+    .logo {
+      height: 56px;
+      transition: transform 0.3s;
+    }
+    .logo:hover {
+      transform: rotate(-6deg) scale(1.07);
+    }
+    .logo-comet {
+      height: 44px;
+      margin-left: .6rem;
+      vertical-align: middle;
     }
     header h1 {
-      font-size: 2.4rem;
+      font-size: 2.5rem;
+      font-weight: 700;
       color: var(--accent);
+      letter-spacing: -2px;
       margin: 0;
     }
     .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       text-align: center;
-      padding: 3rem 2vw;
+      padding: 3rem 2vw 2rem 2vw;
       position: relative;
       overflow: hidden;
     }
     .hero h2 {
-      margin-top: 0;
-      font-size: 2rem;
+      font-size: 2.1rem;
+      font-weight: 700;
       color: var(--primary);
-      animation: fadeInDown 1s ease;
+      margin-top: 0;
+      animation: fadeInDown 1.1s;
     }
     .hero p {
       color: var(--secondary);
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       margin-bottom: 2rem;
     }
     .cta-button {
@@ -65,46 +78,65 @@
       color: var(--primary);
       padding: 1rem 2.5rem;
       border-radius: 50px;
-      font-size: 1.3rem;
-      border: none;
-      box-shadow: 0 2px 18px var(--accent)55;
-      cursor: pointer;
+      font-size: 1.25rem;
       font-weight: 700;
+      border: none;
+      box-shadow: 0 2px 24px #8256ff44;
+      cursor: pointer;
       letter-spacing: 1px;
-      transition: background 0.3s, transform 0.3s;
-      animation: pulse 1.8s infinite;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      animation: pulse 1.9s infinite;
+      display: inline-block;
+      margin-bottom: 1.5rem;
     }
     .cta-button:hover {
       background: var(--button-hover);
       transform: scale(1.05);
+      box-shadow: 0 4px 32px #3623ad88;
     }
     @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-60px);}
+      from { opacity: 0; transform: translateY(-50px);}
       to { opacity: 1; transform: translateY(0);}
     }
     @keyframes pulse {
-      0%, 100% {box-shadow: 0 0 14px var(--accent);}
-      50% {box-shadow: 0 0 40px var(--accent);}
+      0%, 100% {box-shadow: 0 0 18px var(--accent);}
+      50% {box-shadow: 0 0 42px var(--accent);}
+    }
+    .svg-comet {
+      margin: 2rem auto 1rem auto;
+      display: block;
+      width: 90px;
+      height: 90px;
+      animation: spinning 6s infinite linear;
+    }
+    @keyframes spinning {to{transform:rotate(360deg);}}
+    .hero .offer-txt {
+      color: var(--accent);
+      font-weight: 700;
+      margin-top: 0.8rem;
+      font-size: 1.03rem;
     }
     .features, .testimonials, .faq {
-      padding: 2.5rem 6vw;
+      padding: 2.2rem 5vw;
       background: var(--card-bg);
-      border-radius: 32px;
-      box-shadow: 0 8px 44px rgba(140,86,255,0.12);
-      margin: 2.5rem auto;
-      max-width: 940px;
+      border-radius: 28px;
+      box-shadow: 0 6px 28px #8256ff16;
+      margin: 2.7rem auto;
+      max-width: 860px;
     }
     .features h3, .testimonials h3, .faq h3 {
       color: var(--accent);
-      font-size: 1.8rem;
+      font-size: 1.68rem;
+      font-weight: 600;
       margin-top: 0;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.3rem;
     }
     .features-list {
       list-style: none;
       padding-left: 0;
       color: var(--primary);
-      font-size: 1.18rem;
+      font-size: 1.12rem;
     }
     .features-list li {
       margin: 1rem 0;
@@ -115,85 +147,83 @@
       content: "";
       position: absolute;
       left: 0;
-      top: 8px;
+      top: 9px;
       width: 10px;
       height: 10px;
       background: var(--accent);
       border-radius: 50%;
-      box-shadow: 0 1px 8px var(--accent)99;
+      box-shadow: 0 0px 12px var(--accent)90;
     }
     .testimonials-cards {
       display: flex;
-      gap: 1.5rem;
+      gap: 1.3rem;
       flex-wrap: wrap;
       justify-content: center;
     }
     .testimonial-card {
       background: var(--card-bg);
-      border-radius: 18px;
-      padding: 1.2rem 2rem;
-      min-width: 240px;
-      max-width: 340px;
-      box-shadow: 0 2px 14px var(--accent)12;
+      border-radius: 16px;
+      padding: 1.1rem 1.6rem;
+      min-width: 220px;
+      max-width: 320px;
+      box-shadow: 0 2px 12px #8256ff22;
+      animation: fadeInDown 1.2s;
       position: relative;
-      animation: fadeInDown 1.3s;
     }
     .testimonial-card .author {
-      font-weight: 700;
+      font-weight: 600;
       color: var(--accent);
+      font-size: 1.04rem;
       margin-top: 0.5rem;
-      font-size: 1.08rem;
     }
-    .faq q {
-      color: var(--primary);
-      font-weight: bold;
-    }
-    .faq p {
-      color: var(--secondary);
-      font-size: 1rem;
-      margin-bottom: 0.8rem;
-    }
+    .faq q { color: var(--primary); font-weight: bold;}
+    .faq p { color: var(--secondary); font-size: 0.99rem; margin-bottom: 0.7rem;}
     footer {
       text-align: center;
       color: var(--secondary);
-      font-size: 0.98rem;
-      margin: 3rem 0 1.2rem 0;
+      font-size: 0.97rem;
+      margin: 2.7rem 0 1rem 0;
       padding-bottom: 1rem;
     }
-    /* Simple SVG animated icon for AI style */
-    .svg-comet {
-      width: 88px;
-      height: 88px;
-      display: block;
-      margin: 1.8rem auto;
-      animation: spinning 5s infinite linear;
+    .footer-logo {
+      height: 28px; vertical-align: middle; margin-right: 6px;
     }
-    @keyframes spinning {
-      to {transform: rotate(360deg);}
+    .footer-link {
+      color: var(--accent);
+      text-decoration: underline;
     }
     /* Responsive */
     @media (max-width:700px){
-      header, .features, .testimonials, .faq {
-        padding: 1.2rem 2vw;
-      }
-      .testimonials-cards {
-        flex-direction: column;
-        align-items: center;
-      }
+      header, .features, .testimonials, .faq {padding: 1.1rem 2vw;}
+      .testimonials-cards {flex-direction: column; align-items: center;}
+      header h1 {font-size: 2rem;}
+      .logo-comet {height:32px;}
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Perplexity_AI_logo.svg" alt="Perplexity Logo" class="logo">
-    <h1>Perplexity Comet</h1>
+    <!-- Logo Perplexity (SVG Oficial), a la izquierda -->
+    <img src="https://raw.githubusercontent.com/perplexity-ai/brand/main/logo/perplexity-icon-dark.svg" alt="Perplexity Logo" class="logo">
+    <h1>
+      Perplexity
+      <!-- Logo Comet, favicon SVG oficial Perplexity Comet (si cambia el branding, reemplazar por asset final) -->
+      <img src="https://github.com/perplexity-ai/brand/blob/main/logo/comet.svg?raw=true" alt="Comet Logo" class="logo-comet">
+    </h1>
   </header>
   <section class="hero">
     <h2>Descubre el navegador IA más avanzado: Comet</h2>
-    <svg class="svg-comet" fill="none" viewBox="0 0 88 88"><circle cx="44" cy="44" r="32" stroke="#8256ff" stroke-width="8" /><circle cx="44" cy="44" r="24" stroke="#6741c0" stroke-width="4" /><circle cx="44" cy="44" r="10" fill="#8256ff"/><animate attributeName="stroke-dashoffset" values="0;256" dur="4s" repeatCount="indefinite"/></svg>
+    <!-- Animación SVG con tonos oficiales -->
+    <svg class="svg-comet" viewBox="0 0 88 88" fill="none">
+      <circle cx="44" cy="44" r="32" stroke="#8256ff" stroke-width="8"/>
+      <circle cx="44" cy="44" r="24" stroke="#6741c0" stroke-width="4"/>
+      <circle cx="44" cy="44" r="10" fill="#8256ff"/>
+      <path d="M70,32 Q86,22 66,18" stroke="#8256ff" stroke-width="3" fill="none"/>
+      <path d="M30,72 Q14,78 18,60" stroke="#6741c0" stroke-width="3" fill="none"/>
+    </svg>
     <p>Usa inteligencia artificial para potenciar tu navegación, productividad y creatividad. ¡Participa en el programa de referidos y obtén 1 mes PRO gratis solo por descargar desde nuestro enlace!</p>
     <a href="https://pplx.ai/iholamundo78017" class="cta-button" target="_blank" rel="noopener">Descargar Comet</a>
-    <p style="color:#8256ff;font-weight:700;margin-top:1.5rem;">Oferta por tiempo limitado · 1 mes PRO gratis</p>
+    <div class="offer-txt">Oferta por tiempo limitado · 1 mes PRO gratis</div>
   </section>
   <section class="features">
     <h3>¿Por qué elegir Comet?</h3>
@@ -236,7 +266,11 @@
     <p>Comet es desarrollado por Perplexity, líder en IA conversacional y navegación, con altos estándares de seguridad y privacidad.</p>
   </section>
   <footer>
-    <span>© 2025 Perplexity · Comet AI Browser & Programa de Referidos · <a href="https://www.perplexity.ai/es-es/hub/legal/refer-a-friend-program" target="_blank" style="color:#8256ff;">Términos & Condiciones</a></span>
+    <span>
+      <img src="https://raw.githubusercontent.com/perplexity-ai/brand/main/logo/perplexity-icon-dark.svg" class="footer-logo" alt="Logo Perplexity">
+      © 2025 Perplexity · Comet AI Browser & Programa de Referidos · 
+      <a href="https://www.perplexity.ai/es-es/hub/legal/refer-a-friend-program" target="_blank" class="footer-link">Términos & Condiciones</a>
+    </span>
     <br>
     <span>Instala y usa Comet desde nuestro enlace para acceder al beneficio PRO gratis y participar en las recompensas.</span>
   </footer>
