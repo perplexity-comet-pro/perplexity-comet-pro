@@ -8,7 +8,7 @@ Comet es el navegador más avanzado con inteligencia artificial integrada, desar
 
 ## Programa de Referidos · ¡Obtén 1 mes PRO gratis!
 
-Por tiempo limitado, descarga Comet desde nuestro enlace especial y recibe un mes PRO sin costo, además de la oportunidad de participar en el programa de recompensas, donde puedes ganar hasta $100 por cada 10 leads generados siguiendo los pasos.
+Por tiempo limitado, descarga Comet desde nuestro enlace de invitación y recibe un mes PRO sin costo, además de la oportunidad de participar en el programa de recompensas, donde puedes ganar hasta $100 por cada 10 leads generados siguiendo los pasos.
 
 ---
 
