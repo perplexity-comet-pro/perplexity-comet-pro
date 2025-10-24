@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descarga Comet - Obtén 1 mes gratis PRO con Perplexity</title>
+  <meta name="description" content="Descubre el navegador de inteligencia artificial Comet de Perplexity. Descarga, participa en el programa de referidos y recibe un mes PRO gratis. ¡Solo por tiempo limitado!">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-bg: #191c21;
+      --accent: #8256ff;
+      --primary: #fff;
+      --secondary: #8088a2;
+      --button-bg: #8256ff;
+      --button-hover: #6741c0;
+      --card-bg: #23263a;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: var(--main-bg);
+      color: var(--primary);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 4vw;
+      background: var(--card-bg);
+    }
+    header img.logo {
+      height: 48px;
+      margin-right: 1rem;
+    }
+    header h1 {
+      font-size: 2.4rem;
+      color: var(--accent);
+      margin: 0;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 3rem 2vw;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero h2 {
+      margin-top: 0;
+      font-size: 2rem;
+      color: var(--primary);
+      animation: fadeInDown 1s ease;
+    }
+    .hero p {
+      color: var(--secondary);
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .cta-button {
+      background: var(--button-bg);
+      color: var(--primary);
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      font-size: 1.3rem;
+      border: none;
+      box-shadow: 0 2px 18px var(--accent)55;
+      cursor: pointer;
+      font-weight: 700;
+      letter-spacing: 1px;
+      transition: background 0.3s, transform 0.3s;
+      animation: pulse 1.8s infinite;
+    }
+    .cta-button:hover {
+      background: var(--button-hover);
+      transform: scale(1.05);
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-60px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @keyframes pulse {
+      0%, 100% {box-shadow: 0 0 14px var(--accent);}
+      50% {box-shadow: 0 0 40px var(--accent);}
+    }
+    .features, .testimonials, .faq {
+      padding: 2.5rem 6vw;
+      background: var(--card-bg);
+      border-radius: 32px;
+      box-shadow: 0 8px 44px rgba(140,86,255,0.12);
+      margin: 2.5rem auto;
+      max-width: 940px;
+    }
+    .features h3, .testimonials h3, .faq h3 {
+      color: var(--accent);
+      font-size: 1.8rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+    .features-list {
+      list-style: none;
+      padding-left: 0;
+      color: var(--primary);
+      font-size: 1.18rem;
+    }
+    .features-list li {
+      margin: 1rem 0;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+    .features-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 10px;
+      height: 10px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 1px 8px var(--accent)99;
+    }
+    .testimonials-cards {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .testimonial-card {
+      background: var(--card-bg);
+      border-radius: 18px;
+      padding: 1.2rem 2rem;
+      min-width: 240px;
+      max-width: 340px;
+      box-shadow: 0 2px 14px var(--accent)12;
+      position: relative;
+      animation: fadeInDown 1.3s;
+    }
+    .testimonial-card .author {
+      font-weight: 700;
+      color: var(--accent);
+      margin-top: 0.5rem;
+      font-size: 1.08rem;
+    }
+    .faq q {
+      color: var(--primary);
+      font-weight: bold;
+    }
+    .faq p {
+      color: var(--secondary);
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+    }
+    footer {
+      text-align: center;
+      color: var(--secondary);
+      font-size: 0.98rem;
+      margin: 3rem 0 1.2rem 0;
+      padding-bottom: 1rem;
+    }
+    /* Simple SVG animated icon for AI style */
+    .svg-comet {
+      width: 88px;
+      height: 88px;
+      display: block;
+      margin: 1.8rem auto;
+      animation: spinning 5s infinite linear;
+    }
+    @keyframes spinning {
+      to {transform: rotate(360deg);}
+    }
+    /* Responsive */
+    @media (max-width:700px){
+      header, .features, .testimonials, .faq {
+        padding: 1.2rem 2vw;
+      }
+      .testimonials-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Perplexity_AI_logo.svg" alt="Perplexity Logo" class="logo">
+    <h1>Perplexity Comet</h1>
+  </header>
+  <section class="hero">
+    <h2>Descubre el navegador IA más avanzado: Comet</h2>
+    <svg class="svg-comet" fill="none" viewBox="0 0 88 88"><circle cx="44" cy="44" r="32" stroke="#8256ff" stroke-width="8" /><circle cx="44" cy="44" r="24" stroke="#6741c0" stroke-width="4" /><circle cx="44" cy="44" r="10" fill="#8256ff"/><animate attributeName="stroke-dashoffset" values="0;256" dur="4s" repeatCount="indefinite"/></svg>
+    <p>Usa inteligencia artificial para potenciar tu navegación, productividad y creatividad. ¡Participa en el programa de referidos y obtén 1 mes PRO gratis solo por descargar desde nuestro enlace!</p>
+    <a href="https://pplx.ai/iholamundo78017" class="cta-button" target="_blank" rel="noopener">Descargar Comet</a>
+    <p style="color:#8256ff;font-weight:700;margin-top:1.5rem;">Oferta por tiempo limitado · 1 mes PRO gratis</p>
+  </section>
+  <section class="features">
+    <h3>¿Por qué elegir Comet?</h3>
+    <ul class="features-list">
+      <li>Navegación ultra-rápida impulsada por IA.</li>
+      <li>Resúmenes automáticos de sitios y videos.</li>
+      <li>Respuestas inteligentes en contexto.</li>
+      <li>Organiza tus tareas y procesos desde el navegador.</li>
+      <li>Privacidad y seguridad avanzadas.</li>
+      <li>Integración perfecta con servicios y extensiones modernas.</li>
+      <li>Programa de recompensas y referidos exclusivo.</li>
+    </ul>
+  </section>
+  <section class="testimonials">
+    <h3>Testimonios de usuarios Comet</h3>
+    <div class="testimonials-cards">
+      <div class="testimonial-card">
+        <p>“Comet ha transformado mi forma de investigar, ¡responde y resume mejor que cualquier otra IA que probé!”</p>
+        <span class="author">- Laura, docente universitaria</span>
+      </div>
+      <div class="testimonial-card">
+        <p>“Conseguí 1 mes PRO gratis y ayudé a mis amigos a ganar recompensas, todo mientras mejoro mi productividad.”</p>
+        <span class="author">- Jaime, desarrollador web</span>
+      </div>
+      <div class="testimonial-card">
+        <p>“Las tareas automáticas y los resúmenes hacen que mi trabajo diario sea mucho más ágil. ¡Recomiendo Comet a todos!”</p>
+        <span class="author">- Camila, consultora freelance</span>
+      </div>
+    </div>
+  </section>
+  <section class="faq">
+    <h3>Preguntas frecuentes</h3>
+    <q>¿Cómo obtengo el mes PRO gratis?</q>
+    <p>Descarga Comet desde nuestro enlace, realiza al menos una búsqueda y el beneficio PRO se activa automáticamente.</p>
+    <q>¿Cuál es el proceso para ganar recompensas referidos?</q>
+    <p>Comparte tu enlace, invita a otros a descargar, y recibirás recompensas cuando generes leads completos. Revisa las condiciones en la plataforma Dub.</p>
+    <q>¿Hasta cuándo está disponible la oferta?</q>
+    <p>La oferta es por tiempo limitado. Revisa la fecha de vigencia antes de participar.</p>
+    <q>¿Es seguro descargar e instalar Comet?</q>
+    <p>Comet es desarrollado por Perplexity, líder en IA conversacional y navegación, con altos estándares de seguridad y privacidad.</p>
+  </section>
+  <footer>
+    <span>© 2025 Perplexity · Comet AI Browser & Programa de Referidos · <a href="https://www.perplexity.ai/es-es/hub/legal/refer-a-friend-program" target="_blank" style="color:#8256ff;">Términos & Condiciones</a></span>
+    <br>
+    <span>Instala y usa Comet desde nuestro enlace para acceder al beneficio PRO gratis y participar en las recompensas.</span>
+  </footer>
+</body>
+</html>
